@@ -19,20 +19,20 @@
 
 //  arrays  це массиви, використовуемо, коли декілька чи багато значень
 
-let arr = ["nick", "john", "mary"];
+// let arr = ["nick", "john", "mary"];
 
 // alert(arr.length);
 
 // Loops, for - це цикли
 
-for (let i = 0; i < arr.length; i++) {
-    // const element = arr[i];  
-    if (i == 0) {
-        alert(arr[i]);
-    } else {
-    }
-    // alert(i + i);
-}
+// for (let i = 0; i < arr.length; i++) {
+//     // const element = arr[i];  
+//     if (i == 0) {
+//         alert(arr[i]);
+//     } else {
+//     }
+//     // alert(i + i);
+// }
 
 //  DOM manipulating
 
@@ -43,39 +43,39 @@ for (let i = 0; i < arr.length; i++) {
 // title.style.backgroundColor = "red";
 
 // 1 - завдання перше - створіть html елемент p і з допомогою js поміняйте його колір
-const parag = document.
-getElementById("parag");
-parag.style.color = "green";
+// const parag = document.
+// getElementById("parag");
+// parag.style.color = "green";
 
-// 2 - завдання друге - створіть 2 html елементи p,
-// створіть з ними масив і в циклі поміняйте його колір
+// // 2 - завдання друге - створіть 2 html елементи p,
+// // створіть з ними масив і в циклі поміняйте його колір
 
-const oleg = document.getElementById("oleg");
-const olga = document.getElementById("olga");
+// const oleg = document.getElementById("oleg");
+// const olga = document.getElementById("olga");
 
-let arr1 = [oleg, olga];
+// let arr1 = [oleg, olga];
 
-for (let i = 0; i < arr1.length; i++) {
-    arr1[i].style.color = "red";  
-}
+// for (let i = 0; i < arr1.length; i++) {
+//     arr1[i].style.color = "red";  
+// }
 
 //  - завдання nhtn' - створіть 2 html елементи p,
 // створіть з ними масив і в циклі поміняйте їх колір (кольори мають бути різними)
 
 
-const kiev = document.getElementById("kiev");
-const minsk = document.getElementById("minsk");
+// const kiev = document.getElementById("kiev");
+// const minsk = document.getElementById("minsk");
 
-let arr2 = [kiev, minsk];
+// let arr2 = [kiev, minsk];
 
-for (let i = 0; i < arr2.length; i++) {
-    if (i == 0) {
-        arr2[i].style.color = "purple";
-    }   
-        else {
-            arr2[i].style.color = "yellow";
-        }
-}
+// for (let i = 0; i < arr2.length; i++) {
+//     if (i == 0) {
+//         arr2[i].style.color = "purple";
+//     }   
+//         else {
+//             arr2[i].style.color = "yellow";
+//         }
+// }
 
 // // користувач вводить свій вік,
 // а ви в алерті показуєту, в якому році він народився
@@ -98,8 +98,15 @@ btn4.addEventListener("click", yourAge);
 
 // завдання один
 // створіть довільний масив
-// створіть кнопку, після кліку на яку в алерті отримуємо розмір створеного масиву
+// створіть кнопку, після кліку на яку в алерті отримуємо розмір створеного масивуа
 
+let freeArr = [1, 2, 4, 6, 8, 45];
+const btn2 = document.querySelector("#btn2");
+
+function showArr(freeArr) {
+    alert(freeArr.length);
+}
+btn2.addEventListener("click", showArr)
 
 // завдання два
 // створіть абзац
@@ -107,7 +114,6 @@ btn4.addEventListener("click", yourAge);
 const changePar = document.querySelector("#parColor");
 const btnColor = document.querySelector("#btnColor");
 function parColor() {
-  // Генеруємо випадковий RGB колір
   const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
     Math.random() * 256
   )}, ${Math.floor(Math.random() * 256)})`;
