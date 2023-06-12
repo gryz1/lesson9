@@ -76,3 +76,43 @@ for (let i = 0; i < arr2.length; i++) {
             arr2[i].style.color = "yellow";
         }
 }
+
+// // користувач вводить свій вік,
+// а ви в алерті показуєту, в якому році він народився
+const btn4 = document.querySelector("#btn1");
+const input2 = document.querySelector("#input1");
+
+function yourAge() {
+    let userAge = 2023 - input1.value;
+    if (!input1.value) {
+    alert("2023 not your birth year");
+    } else {
+    alert(userAge);
+    }
+    input1.value = "";
+}
+btn4.addEventListener("click", yourAge);
+
+
+
+
+// завдання один
+// створіть довільний масив
+// створіть кнопку, після кліку на яку в алерті отримуємо розмір створеного масиву
+
+
+// завдання два
+// створіть абзац
+// створіть кнопку, після кліку на яку колір абзацу змінюється
+const changePar = document.querySelector("#parColor");
+const btnColor = document.querySelector("#btnColor");
+function parColor() {
+  // Генеруємо випадковий RGB колір
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )}, ${Math.floor(Math.random() * 256)})`;
+
+    changePar.style.color = randomColor;
+}
+
+btnColor.addEventListener("click", parColor);
